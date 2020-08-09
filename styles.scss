@@ -1,0 +1,35 @@
+@import 'theme.scss';
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+my-app {
+  display: block;
+  height: 100vh;
+}
+
+.container {
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.mat-checkbox-label {
+  text-transform: capitalize;
+}
+
+.fill-space {
+  flex: 1 1 auto;
+}
+
+.popover-status {
+    margin-left: 8px;
+    padding: 0px 4px;
+    background: #ffffff;
+    line-height: 28px;
+    border-radius: 5px;
+    color: #000000;
+    min-width: 70px;
+    text-align: center;
+}

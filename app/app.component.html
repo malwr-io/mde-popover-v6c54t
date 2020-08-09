@@ -1,0 +1,45 @@
+<mat-toolbar color="primary">
+  <h1>Angular Material Popover Example</h1>
+  <div class="fill-space"></div>
+  Popover is  <span class="popover-status">{{ popoverTrigger.popoverOpen ? 'opened' : 'closed' }}</span>
+</mat-toolbar> 
+
+
+<main>
+
+  <p>
+    A material design popover component created using Angular version 8 with the Angular CDK.
+  </p>
+
+  <button mat-raised-button color="primary"
+    [mdePopoverTriggerFor]="appPopover"
+    mdePopoverTriggerOn="click" #popoverTrigger="mdePopoverTrigger">
+    Show Popover
+  </button>
+
+  <mde-popover #appPopover="mdePopover" [mdePopoverOverlapTrigger]="false">
+    <mat-card style="max-width: 300px">
+      <mat-card-content>
+      A material design popover component created using Angular version 8 with the Angular CDK.
+      </mat-card-content>
+    </mat-card>
+  </mde-popover>
+
+</main>
+
+<footer>
+
+  <h2>Install Angular Popover Library</h2>
+
+  <h3>
+    <a href="https://www.npmjs.com/package/@material-extended/mde" target="_blank">@material-extended/mde</a>
+  </h3>
+
+  <p>
+    <strong>NPM:</strong> &nbsp; <code>npm install @material-extended/mde</code>
+  </p>
+  <p>
+    <strong>YARN:</strong> &nbsp; <code>yarn add @material-extended/mde</code>
+  </p>
+
+</footer>
